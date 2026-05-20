@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle {
+            width: 500px;
+            height: 100px;
+            border: #ff8c00 solid 5px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            animation-name: square-anim;
+            animation-duration: 2s;
+            animation-fill-mode: backwards;
+            background-color: #ff8c00;
+            animation-iteration-count: infinite;
+        }
+        @keyframes square-anim{
+            to{
+                transform: translate(400px, 0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="square"></div>
+    </div>
+</body>
+</html>
