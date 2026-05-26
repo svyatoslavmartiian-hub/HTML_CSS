@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            background-color: #c77e8d;
+            padding: 10px;
+            list-style: none;
+        }
+        li {
+            margin: 5px;
+            background-color: #c66074;
+        }
+        li::marker {
+            margin-left: 20px;
+        }
+        span{
+            background-color: #c84e66;
+        }
+        #apple::before {
+            content: '1.';
+            margin-right: 5px;
+        }
+        #orange::before {
+            content: '2.';
+            margin-right: 5px;
+        }
+        #pineapple::before {
+            content: '3.';
+            margin-right: 5px;
+        }
+        #pear::before {
+            content: '4.';
+            margin-right: 5px;
+        }
+        #cherry::before {
+            content: '5.';
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li id="apple"><span>Apple</span></li>
+        <li id="orange"><span>Orange</span></li>
+        <li id="pineapple"><span>Pineapple</span></li>
+        <li id="pear"><span>Pear</span></li>
+        <li id="cherry"><span>Cherry</span></li>
+    </ol>
+</body>
+</html>
