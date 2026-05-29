@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2 {
+            margin: 10px;
+        }
+
+        .div-demo {
+            background-color: darksalmon;
+            border: solid black 2px;
+            width: 200px;
+            height: 50px;
+
+            text-align: center;
+        }
+
+        .pos-stat {
+            position: static;
+        }
+
+        .pos-rel {
+            position: relative;
+            /* left: 50px;
+            right: 60px; 
+            bottom: 50px*/
+            top: 100px;
+        }
+
+        .pos-fixed {
+            position: fixed;
+            top: 500px;
+            right: 200px;
+        }
+
+        .top-fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .rel-parent {
+            width: 400px;
+            height: 150px;
+            border: solid 1px black;
+
+            position: relative;
+            left: 25px;
+        }
+
+        .pos-abs {
+            position: absolute;
+            left: 50px;
+        }
+        .pos-sticky {
+            position: sticky;
+            top: 10px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Позиціонування</h1>
+    <h2>Статичне позиціонування</h2>
+    <div class="div-demo pos-stat">position: static;</div>
+    <h2>Відносне позиціонування</h2>
+    <div class="div-demo pos-rel">position: relative;</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure fuga molestiae consequuntur consequatur,
+        temporibus tempora suscipit fugiat magnam deleniti, quidem minus, vero perspiciatis officia similique sit?
+        Obcaecati, molestias tempore!</p>
+    <h2>Фіксоване позиціонування</h2>
+    <div class="div-demo pos-fixed">position: fixed</div>
+    <div class="div-demo top-fixed">fixed on the top</div>
+    <div class="rel-parent">
+        <div class="div-demo pos-abs">position: absolute
+        </div>
+    </div>
+
+    <div class="div-demo pos-abs">position: absolute
+    </div>
+    <div class="div-demo pos-sticky">position: sticky</div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum labore asperiores perferendis, architecto
+        temporibus velit repellat optio repudiandae tempore beatae, in similique veritatis voluptate esse, ut eius.
+        Illum doloribus animi provident! Odio, officiis dolore sunt necessitatibus ducimus velit, eligendi neque
+        corporis facilis consequuntur nesciunt dolorum, nostrum recusandae eos nemo inventore fugit quasi! Nisi nulla
+        quasi id doloribus expedita iste sapiente voluptas consequuntur alias iure, laborum sequi ipsa enim hic repellat
+        velit ab esse, magnam veritatis dolorem facere voluptatum. Ab voluptates ea impedit voluptate? Cumque corporis
+        ducimus consequuntur. Ipsum debitis nisi dolorum provident. Quo laborum voluptate ipsum quibusdam rem, at aut
+        exercitationem incidunt suscipit. Cum, error expedita. Sint enim labore repellendus, omnis suscipit blanditiis
+        optio. Eligendi, inventore quidem ab facilis libero illum consequatur expedita amet excepturi quasi placeat
+        ipsam cupiditate id earum ex numquam, ipsum minima ut quos, dignissimos beatae a. Animi saepe quibusdam vel
+        reprehenderit quas nulla placeat, accusantium aliquam possimus ipsam, rem numquam architecto! Accusamus
+        repellendus soluta vitae quas obcaecati quisquam sapiente consequatur, dignissimos error, sunt assumenda culpa
+        officia voluptate in doloribus a! Optio mollitia labore repellendus enim cupiditate error corporis rerum
+        exercitationem quos iste eos voluptates, ut ipsa explicabo dignissimos eius, placeat ab perspiciatis? Rem,
+        accusantium facilis molestiae vitae velit asperiores dicta. Nostrum magnam ipsum quia tenetur doloribus modi
+        neque dicta maiores quaerat fugiat voluptatibus tempore aperiam laudantium, possimus placeat. Nihil omnis
+        molestiae ullam perspiciatis earum dolores. Laboriosam, harum dolores id autem dolorem nemo rerum hic saepe iure
+        repellendus iste? Rerum corporis distinctio nemo vero optio eligendi. Numquam molestias voluptatem sit
+        voluptates, quasi illo minima rerum vitae quisquam quam nemo. Nobis dolores dolor quod numquam similique
+        mollitia? Iste doloremque quidem neque voluptatibus dolorum velit aperiam, quibusdam ipsum deleniti similique
+        corporis rerum nihil, recusandae hic, inventore exercitationem alias totam repellat pariatur perspiciatis? Iure
+        possimus aperiam quidem laborum laboriosam nemo.</p>
+</body>
+
+</html>

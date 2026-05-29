@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover-elem {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            background-color: brown;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .hidden-elem { 
+            display: none;
+            position: absolute;
+            width: 100px;
+            height: 70px;
+            background-color: burlywood;
+            margin: 0;
+            top: 75px;
+            left: calc(150px / 2 - 50px);
+        }
+        .hover-elem:hover .hidden-elem {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-elem">Наведи на мене!
+        <div class="hidden-elem">Я прихований елемент</div>
+    </div>
+</body>
+</html>
