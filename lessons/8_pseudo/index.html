@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .demo::first-line {
+            color: #f38a89;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 15px black;
+        }
+
+        .demo::first-letter {
+            /* background-color: darkgreen; */
+            font-size: 3em;
+            border: 1px black dotted;
+        }
+
+        .demo::selection {
+            color: #84c233;
+            background-color: #8d1717;
+            text-shadow: 1px 12px 1px #324d0e;
+        }
+
+        a {
+            display: block;
+            font-size: 2em;
+            margin: 15px;
+        }
+
+        section {
+            padding: 0.5em;
+            margin: 0.7em;
+            border: black solid 2px;
+            border-radius: 5px;
+        }
+
+        p:first-child {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p:last-child {
+            margin: 0.3em;
+            font-size: 0.7em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p:nth-child(2) {
+            padding: 0.8em;
+            text-indent: 0.5em;
+        }
+        p:nth-last-child(2){
+            padding: 0.8em;
+            text-indent: 0.5em;
+        }
+        table, td {
+            width: 80%;
+            margin: auto;
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 0.75em;
+            border-right: 0;
+            border-left: 0;
+            width: auto;
+        }
+        tr:nth-child(odd) {
+            animation: odd-rows 5s infinite linear alternate;
+        }
+        tr:nth-child(even) {
+            animation: even-rows 5s infinite linear alternate;
+        }
+        @keyframes odd-rows {
+            from {
+                background-color: white;
+            }
+            to {
+                background-color: aquamarine;
+            }
+
+        }
+        @keyframes even-rows {
+            from {
+                background-color: aquamarine
+            }
+            to {
+                background-color: white;
+                
+            }
+
+        }
+        article:only-child{
+            background-color: #f4587fd3;
+        }
+
+        .menu {
+            list-style-type: none;
+        }
+        .menu-items:not(:last-child) {
+            border: 1px black solid;
+            margin-bottom: 5px;
+        }
+        #section3 {
+            display: none;
+        }
+        #section3:target {
+            display: block;
+            box-shadow: 5px 5px 15px #f3f2a7;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Псевдоелементи та псевдокласи</h1>
+    
+    <ul class="menu">
+        <li class="menu-items">Головна</li>
+        <li class="menu-items">Про нас</li>
+        <li class="menu-items">Послуги</li>
+        <li class="menu-items">Контакти</li>
+    </ul>
+    <p lang="eu" class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est.</p>
+    <a href="#section3">link</a>
+
+    <section>
+        <!-- <h3>Lorem, ipsum dolor.</h3> -->
+        <article>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequuntur, eaque eligendi nobis
+                modi non dicta quisquam dignissimos ratione fuga suscipit, vero dolorem accusamus alias adipisci ab
+                molestiae commodi quidem perspiciatis? Incidunt suscipit quos tempore. Id cum inventore provident
+                dolores alias dignissimos distinctio consectetur eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae quos cum suscipit, esse
+                veniam placeat magnam deleniti asperiores tenetur similique! Officia quos ducimus sint rem mollitia
+                architecto tenetur reprehenderit enim iste dicta, animi beatae cum aliquid doloribus voluptatem sunt at
+                ad voluptates officiis modi consequatur qui? Molestias deserunt, esse aperiam sapiente quisquam cumque.
+            </p>
+            <img src="../3_graphics/resourser/emoji.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, beatae, ratione magnam blanditiis ut rem
+                dolor libero quaerat molestias mollitia esse eius optio ipsam similique quasi porro ipsa commodi
+                quibusdam autem minima praesentium animi ab quae quidem? Cum quam temporibus veritatis natus commodi
+                maxime? Quasi quis, temporibus tenetur quam quaerat nemo porro praesentium ea velit autem eius saepe
+                veritatis? Tempore ad sunt ut, aliquid repellat adipisci? Nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi nihil saepe enim nulla numquam quo,
+                odit blanditiis, debitis provident aperiam maiores, fuga minima. Atque perferendis accusantium quo modi
+                nesciunt.</p>
+        </article>
+    </section>
+    <section>
+        <!-- <h3>Lorem, ipsum dolor.</h3> -->
+        <article>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequuntur, eaque eligendi nobis
+                modi non dicta quisquam dignissimos ratione fuga suscipit, vero dolorem accusamus alias adipisci ab
+                molestiae commodi quidem perspiciatis? Incidunt suscipit quos tempore. Id cum inventore provident
+                dolores alias dignissimos distinctio consectetur eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae quos cum suscipit, esse
+                veniam placeat magnam deleniti asperiores tenetur similique! Officia quos ducimus sint rem mollitia
+                architecto tenetur reprehenderit enim iste dicta, animi beatae cum aliquid doloribus voluptatem sunt at
+                ad voluptates officiis modi consequatur qui? Molestias deserunt, esse aperiam sapiente quisquam cumque.
+            </p>
+            <img src="../3_graphics/resourser/emoji.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, beatae, ratione magnam blanditiis ut rem
+                dolor libero quaerat molestias mollitia esse eius optio ipsam similique quasi porro ipsa commodi
+                quibusdam autem minima praesentium animi ab quae quidem? Cum quam temporibus veritatis natus commodi
+                maxime? Quasi quis, temporibus tenetur quam quaerat nemo porro praesentium ea velit autem eius saepe
+                veritatis? Tempore ad sunt ut, aliquid repellat adipisci? Nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi nihil saepe enim nulla numquam quo,
+                odit blanditiis, debitis provident aperiam maiores, fuga minima. Atque perferendis accusantium quo modi
+                nesciunt.</p>
+        </article>
+    </section>
+    <section id="section3">
+        <!-- <h3>Lorem, ipsum dolor.</h3> -->
+        <article>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequuntur, eaque eligendi nobis
+                modi non dicta quisquam dignissimos ratione fuga suscipit, vero dolorem accusamus alias adipisci ab
+                molestiae commodi quidem perspiciatis? Incidunt suscipit quos tempore. Id cum inventore provident
+                dolores alias dignissimos distinctio consectetur eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae quos cum suscipit, esse
+                veniam placeat magnam deleniti asperiores tenetur similique! Officia quos ducimus sint rem mollitia
+                architecto tenetur reprehenderit enim iste dicta, animi beatae cum aliquid doloribus voluptatem sunt at
+                ad voluptates officiis modi consequatur qui? Molestias deserunt, esse aperiam sapiente quisquam cumque.
+            </p>
+            <img src="../3_graphics/resourser/emoji.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, beatae, ratione magnam blanditiis ut rem
+                dolor libero quaerat molestias mollitia esse eius optio ipsam similique quasi porro ipsa commodi
+                quibusdam autem minima praesentium animi ab quae quidem? Cum quam temporibus veritatis natus commodi
+                maxime? Quasi quis, temporibus tenetur quam quaerat nemo porro praesentium ea velit autem eius saepe
+                veritatis? Tempore ad sunt ut, aliquid repellat adipisci? Nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi nihil saepe enim nulla numquam quo,
+                odit blanditiis, debitis provident aperiam maiores, fuga minima. Atque perferendis accusantium quo modi
+                nesciunt.</p>
+        </article>
+    </section>
+    <section>
+        <!-- <h3>Lorem, ipsum dolor.</h3> -->
+        <article>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, itaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consequuntur, eaque eligendi nobis
+                modi non dicta quisquam dignissimos ratione fuga suscipit, vero dolorem accusamus alias adipisci ab
+                molestiae commodi quidem perspiciatis? Incidunt suscipit quos tempore. Id cum inventore provident
+                dolores alias dignissimos distinctio consectetur eos!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis recusandae quos cum suscipit, esse
+                veniam placeat magnam deleniti asperiores tenetur similique! Officia quos ducimus sint rem mollitia
+                architecto tenetur reprehenderit enim iste dicta, animi beatae cum aliquid doloribus voluptatem sunt at
+                ad voluptates officiis modi consequatur qui? Molestias deserunt, esse aperiam sapiente quisquam cumque.
+            </p>
+            <img src="../3_graphics/resourser/emoji.webp" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, beatae, ratione magnam blanditiis ut rem
+                dolor libero quaerat molestias mollitia esse eius optio ipsam similique quasi porro ipsa commodi
+                quibusdam autem minima praesentium animi ab quae quidem? Cum quam temporibus veritatis natus commodi
+                maxime? Quasi quis, temporibus tenetur quam quaerat nemo porro praesentium ea velit autem eius saepe
+                veritatis? Tempore ad sunt ut, aliquid repellat adipisci? Nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi nihil saepe enim nulla numquam quo,
+                odit blanditiis, debitis provident aperiam maiores, fuga minima. Atque perferendis accusantium quo modi
+                nesciunt.</p>
+        </article>
+    </section>
+
+
+
+
+    <table>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>            
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>            
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+            
+        </tr>        
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>            
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>            
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+            
+        </tr>
+    </table>
+</body>
+
+</html>
