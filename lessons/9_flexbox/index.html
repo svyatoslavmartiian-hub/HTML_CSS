@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .flex-container {
+            background-color: antiquewhite;
+            border: black solid 1px;
+            border-radius: 15px;
+
+            padding: 0.7em;
+            margin: 0.3em;
+            display: flex;
+            gap: 5%;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            
+            flex-direction: row;
+        }
+        img {
+            width: 20%;
+            min-width: 100px;
+        }
+        img:first-child {
+            order: 3;
+            
+        }
+        img:last-child {
+            align-self: flex-end;
+        }
+        /* img:first-child, img:last-child {
+            flex-grow: 1;
+        }
+        img:nth-child(2) {
+            flex-grow: 2;
+        } */
+        .flex-grow-container {
+            display: flex;
+            background-color: antiquewhite;
+            border: black solid 1px;
+            border-radius: 15px;
+
+        }
+        .div-1, .div-2 {
+            height: 50px;
+            
+        }
+        .div-1 {
+            flex-grow: 1;
+            background-color: aquamarine;
+        }
+        .div2 {
+            flex-grow: 2;
+            background-color: greenyellow
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <img src="./resources/emoji.webp" alt="photo1">
+        <img src="./resources/Food_C239-128.png" alt="photo2">
+        <div style="display: flex; justify-content: flex-end; width: 50%;"><img src="./resources/nerd-emoji-emoticon-with-transparent-glasses-funny-yellow-face-with-black-rimmed-eyeglasses-vector.jpg" alt="photo3">
+        </div>
+    </div>
+
+    <div class="flex-grow-container">
+        <div class="div-1">flex-grow: 1;</div>
+        <div class="div-2">flex-grow: 2;</div>
+        <div class="div-1">flex-grow: 1;</div>
+
+    </div>
+    
+</body>
+</html>
