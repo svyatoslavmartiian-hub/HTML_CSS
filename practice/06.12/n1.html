@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 30vh auto 30vh;
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
+
+        header {
+            grid-column: span 2;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Home / Article /</header>
+        <main>
+        <div>The Difference Between</div>
+        <div>Responsive and</div>
+        <div>Adaptive Design</div>
+        </main>
+        <footer>
+            <div><img src="./resources/картинка.jpg" alt=""></div>
+            <div>
+                <span>Author</span>
+                <span>Geoff Graham</span>
+            </div>
+            <div>
+                <span>49 Comments</span>
+                <span>Go to comments</span>
+            </div>
+            <div>
+                <span>Published</span>
+                <span>Nov 11, 2018</span>
+            </div>
+            <div>
+                <span>Updated</span>
+                <span>Nov 17, 2018</span>
+            </div>                        
+        
+        
+        
+        </footer>
+    </div>
+    
+</body>
+</html>
