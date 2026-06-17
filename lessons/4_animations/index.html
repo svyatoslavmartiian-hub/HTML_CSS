@@ -49,7 +49,8 @@
             transform: translate(25px, 20px);
         }
         .scale:hover{
-            transform: scale(20%);
+            transform: scale(150%);
+            
         }
         .rotate:hover{
             transform: rotate(-60deg);
@@ -58,7 +59,7 @@
             transform: rotateX(180deg);
         }
         .rotateY:hover{
-            transform: rotateY(60deg);
+            transform: rotateY(40deg);
         }
         .rotateZ:hover{
             transform: rotateZ(90deg) scale(20%);
@@ -109,6 +110,13 @@
 
             }                                  
         }
+        .exampletest img {
+            border: 5px solid green;
+            overflow: hidden;
+            transition: transform 1s ease-out;
+
+        }
+
     </style>
 </head>
 <body>
@@ -120,7 +128,9 @@
 
 
     <div class="example translate"></div>
-    <div class="example scale"></div>
+    <div class="exampletest">
+        <div class="scale"><img src="../3_graphics/resourser/emoji.webp" alt=""></div>
+    </div>
     <div class="example rotate"></div>
     <div class="example rotateX"></div>
     <div class="example rotateY"></div>
