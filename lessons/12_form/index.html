@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 80vw;
+            min-width: 500px;
+            max-width: 1200px;
+
+            border: solid 1px black;
+            border-radius: 10px;
+
+            background-color: bisque;
+
+            margin: 0.5em auto;
+            padding: 0.7em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4em;
+            flex-direction: column;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" value="nothing">
+        <button type="submit">Search</button>
+        <button type="reset"></button>
+
+    </form>
+    <form>
+        <div>
+            <label for="username">Ім'я користувача: </label>
+            <br>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <br>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <button type="submit">Зареєструватися</button>
+        </div>
+    </form>
+</body>
+</html>
