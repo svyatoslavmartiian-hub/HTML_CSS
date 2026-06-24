@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .grammar-table th, .grammar-table td {
+            border: 1px solid #7f7f7f;
+            padding: 12px;
+            font-size: 14px;
+            
+        }
+
+        .grammar-table th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+
+        .col-yellow { background-color: #fe9; } 
+        .col-blue   { background-color: #ccccff; } 
+        .col-red    { background-color: #ffbbbb; } 
+        .col-green  { background-color: #aaffcc; } 
+        .col-purple { background-color: #ffbbff; }
+
+    </style>
+</head>
+<body>
+
+    <table class="grammar-table">
+        <tr>
+            <th class="col-yellow" colspan="2">ASPECT</th>
+            <th class="col-blue">SIMPLE</th>
+            <th class="col-red">PROGRESSIVE</th>
+            <th class="col-green">PERFECT</th>
+            <th class="col-purple">PERFECT <br> PROGRESSIVE</th>
+        </tr>
+        
+        <tr>
+            <td class="col-yellow" colspan="2" rowspan="2"><b>MEANING</b></td>
+            <td class="col-blue"><i>a common aspect</i></td>
+            <td class="col-red"><i>a process</i></td>
+            <td class="col-green"><i>priority</i></td>
+            <td class="col-purple"><i>priority + process</i></td>
+        </tr>
+        
+        <tr>
+            <td class="col-blue"><b>When?</b></td>
+            <td class="col-red"><b>At what time?</b></td>
+            <td class="col-green"><b>By what time?</b></td>
+            <td class="col-purple"><b>Since what time?<br>How long?</b></td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 0;" class="col-yellow" colspan="2"><i>Period of time</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-blue">usually, often, always, seldom,<br> every day (week, month, year)</td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-red">now, at the moment</td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-green">ever, never, just, already, not..yet, by 3 p.m.</td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-purple">since 3 p.m., for a long time, for a month</td>
+        </tr>
+        
+        <tr>
+            <td class="col-yellow" rowspan="3">Present</td>
+            <td class="col-yellow"><b>+</b></td>
+            <td class="col-blue">V/Vs</td>
+            <td class="col-red">am/is/are + Ving</td>
+            <td class="col-green">have/has + Ved/V3</td>
+            <td class="col-purple">have/has + been + Ving</td>
+        </tr>
+        
+        <tr>
+            <td class="col-yellow"><b>?</b></td>
+            <td class="col-blue">do/does + V</td>
+            <td class="col-red">inversion</td>
+            <td class="col-green">inversion</td>
+            <td class="col-purple">inversion</td>
+        </tr>
+        
+        <tr>
+            <td class="col-yellow"><b>-</b></td>
+            <td class="col-blue">do/does + not + V</td>
+            <td class="col-red">am/is/are + not + Ving</td>
+            <td class="col-green">have/has + not + Ved/V3</td>
+            <td class="col-purple">have/has + not + been + Ving</td>
+        </tr>
+        <tr>
+            <td style="padding: 0;" class="col-yellow" colspan="2"><i>Period of time</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-blue"><i>yesterday, last week (month,year), long ago</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-red"><i>yesterday at 3p.m.,yeasterday <br> from 6 till 7, when you came</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-green"><i>yesterday by 3p.m.,before <br> some time in the past</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-purple"><i>yesterday since 3p.m.,for <br> some time in the past</i></td>
+        </tr>
+        <tr>
+            <td class="col-yellow" rowspan="3">Past</td>
+            <td class="col-yellow"><b>+</b></td>
+            <td class="col-blue">Ved/V<sub>2</sub></td>
+            <td class="col-red">was/were + Ving</td>
+            <td class="col-green">had + Ved/V<sub>3</sub></td>
+            <td class="col-purple">had + been + Ving</td>
+        </tr>
+        <tr>
+            <td class="col-yellow"><b>?</b></td>
+            <td class="col-blue">did + V</td>
+            <td class="col-red">inversion</td>
+            <td class="col-green">inversion</td>
+            <td class="col-purple">inversion</td>
+        </tr>
+        <tr>
+            <td class="col-yellow"><b>-</b></td>
+            <td class="col-blue">did + not + V</td>
+            <td class="col-red">was/were + not + Ving</td>
+            <td class="col-green">had + not + Ved/V<sub>3</sub></td>
+            <td class="col-purple">had + not + been + Ving</td>
+        </tr>
+        <tr>
+            <td style="padding: 0;" class="col-yellow" colspan="2"><i>Period of time</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-blue"><i>tomorrow, next week (month,<br>year)</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-red"><i>tomorrow at 3p.m, tomorrow<br>from 6 till 7, when you come</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-green"><i>tomorrow by 3p.m before<br>some time in the future</i></td>
+            <td style="padding: 0; padding-left: 5px; text-align: left;" class="col-purple"><i>tomorrow since 3p.m, for<br>some time in the future</i></td>
+        </tr>
+        <tr>
+            <td class="col-yellow" rowspan="3">Future</td>
+            <td class="col-yellow"><b>+</b></td>
+            <td class="col-blue">will + V</td>
+            <td class="col-red">will + be + Ving</td>
+            <td class="col-green">will + have + Ved/V<sub>3</sub></td>
+            <td class="col-purple">will + have + been +<br></td>
+        </tr>
+        <tr>
+            <td style="padding: 0;" class="col-yellow"><b>?</b></td>
+            <td style="padding: 0;" class="col-blue">inversion</td>
+            <td style="padding: 0;" class="col-red">inversion</td>
+            <td style="padding: 0;" class="col-green">inversion</td>
+            <td style="padding: 0; padding-bottom: 5px; padding-top: 5px;" class="col-purple">inversion</td>
+        </tr>
+        <tr>
+            <td class="col-yellow"><b>-</b></td>
+            <td class="col-blue">won't + V</td>
+            <td class="col-red">won't + be + Ving</td>
+            <td class="col-green">won't + have + Ved/V<sub>3</sub></td>
+            <td class="col-purple">won't + have + been + Ving</td>
+        </tr>
+    </table>
+
+</body>
+</html>

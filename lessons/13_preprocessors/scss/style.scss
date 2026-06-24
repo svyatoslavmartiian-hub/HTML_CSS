@@ -1,0 +1,49 @@
+@import "_reset";
+@import "_variables";
+
+body {
+    font: {
+        size: $main-font-size;
+        family: $main-font;
+    }
+    background-color: $main-color;
+}
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        &:hover {
+            background-color: $secondary-color;
+            color: $main-color;
+        }
+    }
+}
+
+@mixin important {
+    color: red;
+    font-weight: bold;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.danger {
+    background-color: $secondary-color;
+    @include important()
+}
+
+@mixin bordered($color, $width) {
+    border: $color solid $width;
+}
+
+.article {
+    @include bordered(green, 4px )
+}
