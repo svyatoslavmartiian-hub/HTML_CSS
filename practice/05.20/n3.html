@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color: #fcfad3;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-h1 {
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+
+        }
+        .icon {
+            width: 70px;
+            height: auto;
+            margin: 20px;
+            display: inline-block;
+            opacity: 0;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            
+
+        }
+        .icon-1 {
+            margin-top: 150px;
+            animation-delay: 0s;
+            animation-name: slideUp1;
+               
+        }
+        .icon-2 {
+            width: 100px;
+            animation-delay: 0.5s;
+            animation-name: slideUp2;  
+        }
+        .icon-3 {
+            width: 100px;
+            animation-delay: 1s;
+            animation-name: slideUp3;
+        }
+        .icon-4 {
+            margin-top: 150px;
+            animation-delay: 1.5s;
+            animation-name: slideUp4;  
+        }
+        .icon-5 {
+            display: flex;
+            margin-left: 48%;
+            position: absolute;
+            animation-delay: 2s;  
+            animation-name: slideUp5;
+            
+            
+        }
+        
+        @keyframes slideUp1 {
+            0% { transform: translateY(600px) rotate(-25deg); opacity: 0; }
+            15% { opacity: 1; }
+            100% { transform: translateY(0) rotate(-25deg); opacity: 1; }
+        }
+
+        @keyframes slideUp2 {
+            0% { transform: translateY(600px) rotate(-15deg); opacity: 0; }
+            15% { opacity: 1; }
+            100% { transform: translateY(0) rotate(-15deg); opacity: 1; }
+        }
+
+        @keyframes slideUp3 {
+        0% { transform: translateY(600px) rotate(15deg); opacity: 0; }
+        15% { opacity: 1; }
+            100% { transform: translateY(0) rotate(15deg); opacity: 1; }
+        }
+
+        @keyframes slideUp4 {
+            0% { transform: translateY(600px) rotate(25deg); opacity: 0; }
+            15% { opacity: 1; }
+            100% { transform: translateY(0) rotate(25deg); opacity: 1; }
+        }
+
+        @keyframes slideUp5 {
+            0% { transform: translateY(600px) rotate(90deg); opacity: 0; }
+            15% { opacity: 1; }
+            100% { transform: translateY(0) rotate(90deg); opacity: 1; }
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="text-h1">HELLO, MY SITE!</h1>
+    <div class="container">
+        <img src="./resourser/calc.png" alt="Калькулятор" class="icon icon-1">
+        <img src="./resourser/book.png" alt="Книга" class="icon icon-2">
+        <img src="./resourser/paper.png" alt="Блокнот" class="icon icon-3">
+        <img src="./resourser/pallete.png" alt="Палітра" class="icon icon-4">
+    </div>
+        <img src="./resourser/pencil.png" alt="Олівець" class="icon icon-5">
+
+</body>
+</html>
