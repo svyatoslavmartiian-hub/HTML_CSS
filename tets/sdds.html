@@ -1,21 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .id:hover {
-            background-color: black;
-            width: 50px;
-            height: 50px;transition: all 0.7s ease 0s;;
-            transform: translate(200px, 300px);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Завдання 1 - Галерея проектів</title>
+  <style>
+    /* Обнулення базових стилів */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfc;
+  color: #333;
+  padding: 40px 20px;
+}
 
-    </style>
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Сітка для карток */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Кожна картка займає приблизно 31% ширини, щоб ставати в 3 стовпчики */
+.project-card {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+  background-color: #f4f4f4;
+  position: relative;
+  overflow: hidden; /* Щоб прихована плашка не вилазила за межі знизу */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Рамка-підкладка для зображення */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Робимо помаранчеву лінію внизу картки за замовчуванням */
+  border-bottom: 4px solid #f29c07; 
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Стилі плашки (прихована за замовчуванням) */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%); /* Повністю ховаємо плашку під картку */
+  transition: transform 0.3s ease-in-out; /* Плавна анімація виїзду */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Помаранчева шапка плашки */
+.overlay-title {
+  background-color: #f29c07;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+/* Темно-сірий блок з текстом */
+.overlay-text {
+  background-color: #33373b;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.overlay-text p {
+  margin-bottom: 8px;
+}
+
+.overlay-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Ефект наведення миші: висуваємо плашку вгору */
+.project-card:hover .overlay {
+  transform: translateY(0);
+}
+  </style>
 </head>
 <body>
-    <div class="id" ></div>
+
+  <div class="container">
+    <h2>Завдання 1</h2>
+    <p class="description">Реалізувати розмітку за прикладом. При наведенні на зображення з'являється плашка з описом. Зображення підібрати будь яке.</p>
+    
+    <div class="projects-grid">
+      <!-- Картка 1 -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=1" alt="Проект 1">
+          <div class="overlay">
+            <div class="overlay-title">Project 1</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Картка 2 (як на макеті — при наведенні) -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=2" alt="Проект 2">
+          <div class="overlay">
+            <div class="overlay-title">Project 2</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Картка 3 -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=3" alt="Проект 3">
+          <div class="overlay">
+            <div class="overlay-title">Project 3</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Картка 4 -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=4" alt="Проект 4">
+          <div class="overlay">
+            <div class="overlay-title">Project 4</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Картка 5 -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=5" alt="Проект 5">
+          <div class="overlay">
+            <div class="overlay-title">Project 5</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Картка 6 -->
+      <div class="project-card">
+        <div class="image-wrapper">
+          <img src="https://picsum.photos/400/300?random=6" alt="Проект 6">
+          <div class="overlay">
+            <div class="overlay-title">Project 6</div>
+            <div class="overlay-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
