@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Випадаюче меню</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            width: 400px;
+            height: 20px;
+            background-color: #4c996b;
+            display: flex;
+        }
+
+        .catg_menu {
+            width: 100px;
+            height: 20px;
+            padding: 4px 0;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+            border-right: 1px #3f8059 solid;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .menu div:last-child {
+            border-right: none;
+        }
+
+        .menu .catg_menu:hover {
+            background-color: #3f8059;
+        }
+
+
+        .Categories-2 {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100px;
+        }
+
+        .Categories:hover .Categories-2 {
+            display: block;
+        }
+
+        .catg-2 {
+            width: 100px;
+            height: 20px;
+            color: white;
+            background-color: #4c996b;
+            font-size: 10px;
+            padding: 4px 0;
+            text-align: center;
+            border-bottom: #3f8059 1px solid;
+            position: relative;
+        }
+
+        .catg-2:hover {
+            background-color: #3f8059;
+        }
+
+        .catg-2:last-child {
+            border-bottom: none;
+        }
+
+        .Categories-3 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100px;
+        }
+
+        .submenu-parent:hover .Categories-3 {
+            display: block;
+        }
+
+        .catg-3 {
+            width: 100px;
+            height: 20px;
+            color: white;
+            background-color: #4c996b;
+            font-size: 10px;
+            padding: 4px 0;
+            text-align: center;
+            border-bottom: #3f8059 1px solid;
+        }
+
+        .catg-3:hover {
+            background-color: #3f8059;
+        }
+
+        .catg-3:last-child {
+            border-bottom: none;
+        }
+        p {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="home catg_menu">Home</div>
+
+            <div class="Categories catg_menu">
+                Categories
+
+                <div class="Categories-2">
+
+                    <div class="catg-2 submenu-parent">
+                        Man
+                        <div class="Categories-3">
+                            <div class="catg-3">Dress</div>
+                            <div class="catg-3">Pants</div>
+                            <div class="catg-3">Shoes</div>
+                        </div>
+                    </div>
+
+                    <div class="catg-2 submenu-parent">
+                        Woomen
+                        <div class="Categories-3">
+                            <div class="catg-3">Dress</div>
+                            <div class="catg-3">Pants</div>
+                            <div class="catg-3">Shoes</div>
+                        </div>
+                    </div>
+
+                    <div class="catg-2 submenu-parent">
+                        Kids
+                        <div class="Categories-3">
+                            <div class="catg-3">Dress</div>
+                            <div class="catg-3">Pants</div>
+                            <div class="catg-3">Shoes</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="About catg_menu">About</div>
+            <div class="Contacts catg_menu">Contacts</div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores doloribus cupiditate sunt vero aliquam,
+        similique, impedit, at soluta aut tenetur perferendis nulla cumque pariatur! Eos, molestias dignissimos! Tenetur
+        veritatis maiores, sapiente, vitae voluptas unde provident magnam architecto nostrum quis sint inventore
+        accusantium quisquam dignissimos! Molestias reprehenderit fuga et, delectus placeat voluptatum quibusdam saepe
+        quae voluptatibus, fugit totam labore nobis quis laboriosam! Nobis maxime porro sed consectetur enim reiciendis
+        aperiam praesentium, non cum vero aspernatur dolores sunt culpa iure eaque nostrum similique doloremque quidem
+        autem? Nam fuga deserunt non hic laudantium consequatur porro beatae, maiores perferendis obcaecati, aliquid
+        corrupti nulla?</p>
+
+</body>
+
+</html>
