@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0;
+            
+        }
+        body {
+            padding: 30px;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+
+        .cart {
+            width: 130px;
+            padding: 10px 0;
+            background-color: white;
+            border: 1px solid rgba(68, 67, 67, 0.329);
+            border-radius: 7px;
+            
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 9px;
+            
+
+            transition: transform 1s ease-out;
+            
+        }
+        .text-h2 {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            display: inline-block;
+
+            
+            
+            
+        }
+
+        .line-n1 {
+            width: 100%;
+            height: 2px;
+            background-color: #c53351;
+        }
+
+        .line-n2 {
+            width: 100%;
+            height: 2px;
+            background-color: #d18a35;
+        }
+
+        .line-n3 {
+            width: 100%;
+            height: 2px;
+            background-color: #1c5879;
+        }
+
+        .line-n4 {
+            width: 100%;
+            height: 2px;
+            background-color: #64b739;
+        }
+        
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-1-1 {
+            color: rgba(71, 71, 71, 0.253);
+            font-size: 7px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-1 {
+            font-size: 8px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .button-1 {
+            width: 50px;
+            height: 20px;
+            border: 1px solid #c53351;
+            border-radius: 4px;
+            background-color: #c53351;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 3px;
+            
+        }
+
+        .button-2 {
+            width: 50px;
+            height: 20px;
+            border: 1px solid #d18a35;
+            border-radius: 4px;
+            background-color: #d18a35;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 3px;
+            
+        }
+
+        .button-3 {
+            width: 50px;
+            height: 20px;
+            border: 1px solid #1c5879;
+            border-radius: 4px;
+            background-color: #1c5879;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 3px;
+            
+        }
+
+        .button-4 {
+            width: 50px;
+            height: 20px;
+            border: 1px solid #64b739;
+            border-radius: 4px;
+            background-color: #64b739;
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            padding-top: 3px;
+            
+        }
+        
+        .cart:hover {
+            transform: scale(1.2);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <h2 class="text-h2">ENTERPRISE</h2>
+            <div class="line-n1"></div>
+            <p class="price">$69</p>
+            <p class="text-1-1">per month</p>
+            <p class="text-1">10GB disk space</p>
+            <p class="text-1">100GB monthly bandwidth</p>
+            <p class="text-1">20 email accounts</p>
+            <p class="text-1">Unlimited subdomens</p>
+            <div class="button-1">BUY</div>
+        </div>
+
+
+                <div class="cart">
+            <h2 class="text-h2">PROFESSIONAL</h2>
+            <div class="line-n2"></div>
+            <p class="price">$29</p>
+            <p class="text-1-1">per month</p>
+            <p class="text-1">5GB disk space</p>
+            <p class="text-1">60GB monthly bandwidth</p>
+            <p class="text-1">10 email accounts</p>
+            <p class="text-1">Unlimited subdomens</p>
+            <div class="button-2">BUY</div>
+        </div>
+
+
+                <div class="cart">
+            <h2 class="text-h2">STANDARD</h2>
+            <div class="line-n3"></div>
+            <p class="price">$19</p>
+            <p class="text-1-1">per month</p>
+            <p class="text-1">3GB disk space</p>
+            <p class="text-1">30GB monthly bandwidth</p>
+            <p class="text-1">5 email accounts</p>
+            <p class="text-1">Unlimited subdomens</p>
+            <div class="button-3">BUY</div>
+        </div>
+
+
+                <div class="cart">
+            <h2 class="text-h2">BASIC</h2>
+            <div class="line-n4"></div>
+            <p class="price">$9</p>
+            <p class="text-1-1">per month</p>
+            <p class="text-1">1GB disk space</p>
+            <p class="text-1">10GB monthly bandwidth</p>
+            <p class="text-1">2 email accounts</p>
+            <p class="text-1">Unlimited subdomens</p>
+            <div class="button-4">BUY</div>
+        </div>
+    </div>
+</body>
+</html>
