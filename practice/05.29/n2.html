@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            width: 70px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(116, 116, 116);
+            color: white;
+            font-size: 14px;
+            overflow: hidden;
+            transition: width 1s ease-out;
+            z-index: 1000;
+        }
+
+        .menu:hover {
+            width: 220px;
+        }
+
+        .menu-title {
+            padding: 15px 13px;
+            position: sticky;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            gap: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .item:hover {
+            background-color: rgb(80, 80, 80);
+        }
+
+        .picture {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+
+        .text {
+            margin-left: 70px;
+            padding: 50px 80px;
+        }
+
+        p {
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-title">MENU</div>
+
+            <div class="item">
+                <img src="./resoursec/edit.png" alt="" class="picture">
+                <span>EDIT</span>
+            </div>
+
+            <div class="item">
+                <img src="./resoursec/favorites.png" alt="" class="picture">
+                <span>FAVORITES</span>
+            </div>
+
+            <div class="item">
+                <img src="./resoursec/history.png" alt="" class="picture">
+                <span>HISTORY</span>
+            </div>
+
+            <div class="item">
+                <img src="./resoursec/security.png" alt="" class="picture">
+                <span>SECURITY</span>
+            </div>
+
+            <div class="item">
+                <img src="./resoursec/settings.png" alt="" class="picture">
+                <span>SETTINGS</span>
+            </div>
+        </div>
+
+        <div class="text">
+            <h2>WHAT IS LOREM IPSUM?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, magnam ex alias tenetur eaque ipsum
+                molestiae modi! Libero tenetur ut maiores commodi in iusto quo dolorum eveniet! Culpa, cupiditate odit
+                numquam quibusdam perferendis tempora sed vel voluptates reprehenderit sapiente aliquid quidem esse
+                repellat ipsam excepturi voluptate porro veritatis, quas quia quod, ea nostrum. Doloribus voluptatum
+                dolorum minima sed nulla nostrum nihil magnam in illum tenetur maiores vel necessitatibus cupiditate,
+                quam cum dolorem sint eligendi ipsum magni. Distinctio perspiciatis perferendis labore voluptates
+                mollitia repudiandae. Commodi, ad nulla. Quasi eius praesentium amet officia fuga aliquam similique qui
+                velit facere? Provident, soluta dolorem.</p>
+
+            <h2>WHY DO WE USE IT?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis ea est deserunt asperiores
+                ratione minima consequuntur odit modi! Corporis quis libero sint optio! Tempora, qui libero a
+                consectetur cupiditate ipsum dolor ex vel vero autem, mollitia dignissimos eligendi iste officiis maxime
+                saepe dicta, obcaecati inventore. Accusamus, reiciendis. Numquam accusantium at iusto sed, maxime
+                impedit rem suscipit dolore explicabo perferendis animi consequatur neque quisquam minima, assumenda
+                praesentium in quod iste voluptatem quam? Numquam corrupti quae perferendis fuga quam exercitationem
+                praesentium amet nulla, consequatur porro assumenda autem eaque eius molestiae cupiditate sapiente in
+                dolor voluptatum repellat. Magnam totam quaerat facilis dignissimos!</p>
+
+            <h2>WHERE DOES IT COME FROM?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis! Fugiat molestiae,
+                delectus soluta dolorem veritatis consectetur beatae! Dignissimos aspernatur nemo dolore ipsum assumenda
+                voluptatem blanditiis non asperiores, quas illo fuga saepe inventore obcaecati neque quibusdam aliquam
+                laboriosam. Soluta voluptates nam voluptatum atque. Nisi deleniti eum cumque ducimus consectetur
+                perspiciatis iste cupiditate a porro laudantium? Voluptatibus eum minus ex iusto sed nihil repellendus
+                facilis optio beatae impedit, est suscipit eius error officia recusandae reprehenderit numquam debitis
+                cum illum labore non facere, consequuntur quasi! Molestiae illum ad, obcaecati modi, vero totam tempore
+                error ea omnis voluptas provident, accusamus doloremque mollitia libero?</p>
+        </div>
+    </div>
+</body>
+
+</html>
