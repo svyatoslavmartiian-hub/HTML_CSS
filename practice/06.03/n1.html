@@ -1,89 +1,231 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        td:nth-child(2) {
-            background-color: gray;
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-        td:nth-child(1) {
-            background-color: rgb(209, 209, 209);
+
+        table {
+            margin: 50px;
+            border-collapse: separate;
+            border-spacing: 0;
         }
-        td:nth-child(2) {
-            background-color: rgb(247, 0, 0);
-        }        
-        th:nth-child(even) {
-            background-color: rgb(209, 209, 209);
+
+        tr:first-child th:first-child,
+        tr:first-child td:first-child {
+            border-top-left-radius: 12px;
         }
-        th:nth-child(odd) {
-            background-color: rgb(143, 143, 143);
+
+        tr:first-child th:last-child,
+        tr:first-child td:last-child {
+            border-top-right-radius: 12px;
         }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 12px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 12px;
+        }
+
+        th:first-child {
+            width: 180px;
+            height: 100px;
+            background-color: #7887a9;
+            color: white;
+        }
+
+        th:nth-child(2),
+        th:nth-child(3),
+        th:nth-child(4),
+        th:nth-child(5) {
+            height: 100px;
+            width: 100px;
+            color: white;
+            vertical-align: top;
+        }
+
+        th:nth-child(2) {
+            background-color: #4e618c;
+        }
+
+        th:nth-child(3) {
+            background-color: #2e4072;
+        }
+
+        th:nth-child(4) {
+            background-color: #152853;
+        }
+
+        th:nth-child(5) {
+            background-color: #061437;
+        }
+
+        th:nth-child(2) p:first-child,
+        th:nth-child(3) p:first-child,
+        th:nth-child(4) p:first-child,
+        th:nth-child(5) p:first-child {
+            margin-bottom: 16px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        th:nth-child(2) p:nth-child(3),
+        th:nth-child(3) p:nth-child(3),
+        th:nth-child(4) p:nth-child(3),
+        th:nth-child(5) p:nth-child(3) {
+            padding-top: 3px;
+            font-size: 14px;
+        }
+
+        th:nth-child(2) p:nth-child(2),
+        th:nth-child(3) p:nth-child(2),
+        th:nth-child(4) p:nth-child(2),
+        th:nth-child(5) p:nth-child(2){
+            font-size: 27px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 13px;
+            align-items: center;
+        }
+
+        td:first-child {
+            padding-left: 15px;
+        }
+
+
+        tbody tr:nth-child(odd) td :nth-child(odd) {
+            background-color: #e6e6e6;
+        }
+
+        tbody tr:nth-child(even) td:nth-child(even) {
+            background-color: #e6e6e6;
+        }
+
+        tbody tr:nth-child(even) td:nth-child(odd) {
+            background-color: #dadada;
+        }
+
+        td:nth-child(n+2) {
+            text-align: center;
+            vertical-align: center;
+        }
+
+        tr:nth-child(8) td:nth-child(n+2) p{
+            border: 1px solid rgba(0, 0, 0, 0.315);
+            background-color: rgba(100, 100, 100, 0.205);
+            padding: 5px 16px;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+ 
+
+
+
+
     </style>
 </head>
 <body>
     <table>
-        <thead>
-            <td>Choose your plan</td>
-            <th><span>starter</span> <span>$10</span> <span>per month</span> </th>
-            <th><span>econom</span> <span>$30</span> <span>per month</span></th>
-            <th><span>standart</span> <span>$59</span> <span>per month</span></th>
-            <th><span>professional</span> <span>$99</span> <span>per month</span></th>
+        <tr>
+            <th>Chose your plan</th>
+            <th>
+                <p>starter</p>
+                <p>$10</p>
+                <p>per month</p>
+            </th>
+            <th>
+                <p>econom</p>
+                <p>$30</p>
+                <p>per month</p>
+            </th>
+            <th>
+                <p>standard</p>
+                <p>$59</p>
+                <p>per month</p>
+            </th>
+            <th>
+                <p>professional</p>
+                <p>$99</p>
+                <p>per month</p>
+            </th>
+        </tr>
 
-        </thead>
-        <tbody>
-            <tr id="n1">
-                <td>Amout of space</td>
-                <th>20GB</th>
-                <th>40GB</th>
-                <th>110GB</th>
-                <th>Unlimeted</th>
-            </tr>
-            <tr>
-                <td>Bandwidth per month</td>
-                <th>120GB</th>
-                <th>240GB</th>
-                <th>610GB</th>
-                <th>1300Gb</th>
-            </tr>
-            <tr>
-                <td>Email accounts</td>
-                <th>1</th>
-                <th>15</th>
-                <th>60</th>
-                <th>Unlimeted</th>
-            </tr>
-            <tr>
-                <td>MySQL databases</td>
-                <th>1</th>
-                <th>15</th>
-                <th>60</th>
-                <th>Unlimeted</th>
-            </tr>
-            <tr>
-                <td>25h support</td>
-                <th>No</th>
-                <th>Yes</th>
-                <th>Yes</th>
-                <th>Yes</th>
-            </tr>
-            <tr>
+        
+        <tr>
+            <td>Amout of space</td>
+            <td>20GB</td>
+            <td>40GB</td>
+            <td>110GB</td>
+            <td>Unlimeted</td>
+        </tr>
+
+
+        <tr>
+            <td>Bandwidth per month</td>
+            <td>120GB</td>
+            <td>240GB</td>
+            <td>610GB</td>
+            <td>1300GB</td>
+        </tr>
+
+
+        <tr>
+            <td>Email accounts</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimeted</td>
+        </tr>
+
+
+        <tr>
+            <td>MySQL databases</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimeted</td>
+        </tr>
+
+
+        <tr>
+            <td>25h support</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+
+
+        <tr>
             <td>Support tickets per month</td>
-            <th>2</th>
-            <th>6</th>
-            <th>14</th>
-            <th>20</th>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <th>START</th>
-            <th>START</th>
-            <th>START</th>
-            <th>START</th>
+            <td>2</td>
+            <td>6</td>
+            <td>14</td>
+            <td>20</td>
+        </tr>
 
-        </tfoot>
+
+        <tr>
+            <td></td>
+            <td><p>START</p></td>
+            <td><p>START</p></td>
+            <td><p>START</p></td>
+            <td><p>START</p></td>
+        </tr>
+
     </table>
 </body>
 </html>
