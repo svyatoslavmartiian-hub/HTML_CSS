@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (min-width: 801px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                max-width: 1024px;
+                justify-content: center;
+                margin: 20px auto;
+                padding: 10px 0;
+                background-color: #f5f5f5
+
+
+            }
+
+            .header {
+                display: flex;
+            }
+
+            .img-my-mail {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                margin-left: 20px;
+            }
+
+            .left-mail {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                
+                
+            }
+
+            .right-mail {
+                display: flex;
+                align-items: center;
+                margin-left: 705px;
+                gap: 10px;
+            }
+
+            hr {
+                margin-top: 15px;
+            }
+
+            .img-account {
+                width: 30px;
+                height: 30px;
+                
+            }
+
+            .star-1, .star-2 {
+                width: 15px;
+                height: 15px;
+            }
+
+            .card {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-left: 40px;
+                margin-top: 15px;
+            }
+
+            .img-left-menu {
+                width: 25px;
+                height: 25px;
+            }
+
+            .incoming {
+                margin-top: 20px;
+            }
+
+            .content-left-main {
+                display: flex;
+            }
+
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                margin-top: 8px;
+                margin-left: 10px;
+                margin-bottom: 15px;
+            }
+
+            .sms {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                border-bottom: 1px solid #e7e7e7;
+                padding: 10px 0;
+            }
+
+            .sender-name {
+                width: 150px;
+                min-width: 150px;
+                flex-shrink: 0;
+            }
+
+            .text-content {
+                display: flex;
+                flex: 1;
+                gap: 5px;
+                overflow: hidden;
+            }
+
+            .sms-data {
+                display: flex;
+                font-size: 16px;
+                gap: 15px;
+                align-items: center;
+                justify-content: flex-end;
+                flex-shrink: 0;
+            }
+
+            .attach {
+                width: 15px;
+                height: 15px;
+            }
+
+            .text-sms p:first-child {
+                width: 160px;
+                min-width: 150px;   
+                flex-shrink: 0;     
+                margin-right: 0;
+            }
+
+            .incoming {
+                background-color: rgba(255, 0, 0, 0.123);
+                padding: 10px 0;
+                padding-left: 15px;
+                padding-right: 60px;
+
+            }
+
+            .outgoing, .drafts, .spam  {
+                margin-left: 50px;
+            }
+
+            .main-content-text {
+                display: flex;
+                flex: 1;
+                gap: 5px;
+                overflow: hidden;
+            }
+
+            .text-content p:nth-child(2) {
+                color: #9a9b9a;
+            }
+        }
+
+
+        @media (min-width:551px) and (max-width: 800px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                max-width: 720px;
+                justify-content: center;
+                margin: 20px 10px;
+                padding: 15px 0;
+                background-color: #f5f5f5
+
+
+            }
+
+            .header {
+                display: flex;
+            }
+
+            .img-my-mail {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                margin-left: 20px;
+            }
+
+            .left-mail {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                
+                
+            }
+
+            .right-mail {
+                display: flex;
+                align-items: center;
+                margin-left: 390px;
+                gap: 10px;
+            }
+
+            hr {
+                margin-top: 20px;
+            }
+
+            .img-account {
+                width: 30px;
+                height: 30px;
+                
+            }
+
+            .star-1, .star-2 {
+                width: 13px;
+                height: 13px;
+                margin-bottom: 43px;
+            }
+
+            .card {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-left: 30px;
+                margin-top: 15px;
+                font-size: 14px;
+            }
+
+            .img-left-menu {
+                width: 22px;
+                height: 22px;
+            }
+
+            .incoming {
+                margin-top: 20px;
+            }
+
+            .content-left-main {
+                display: flex;
+                
+            }
+
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                margin-top: 8px;
+                margin-left: 10px;
+                margin-bottom: 15px;
+            }
+
+            .main-content-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                display: none;
+            }
+
+            .sms {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                border-bottom: 1px solid #e7e7e7;
+                padding: 10px 0;
+            }
+
+            .sender-name {
+                width: 350px;
+                min-width: 150px;
+                flex-shrink: 0;
+            }
+
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 5px;
+                overflow: hidden;
+            }
+
+            .sms-data {
+                display: flex;
+                font-size: 14px;
+                margin-bottom: 38px;
+                gap: 40px;
+                align-items: center;
+                justify-content: flex-end;
+                flex-shrink: 0;
+            }
+
+            .sms-3 .sms-data,
+            .sms-6 .sms-data,
+            .sms-7 .sms-data {
+                margin-left: 55px;
+            }
+
+            .attach {
+                width: 15px;
+                height: 15px;
+            }
+
+            .text-content p:nth-child(2) {
+                color: #9a9b9a;
+            }
+
+
+            .incoming {
+                background-color: rgba(255, 0, 0, 0.123);
+                padding: 10px 0;
+                padding-left: 15px;
+                padding-right: 60px;
+
+            }
+
+            .outgoing, .drafts, .spam  {
+                margin-left: 45px;
+            }
+
+
+
+        }
+
+        @media (max-width: 550px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                justify-content: center;
+                margin: 20px 10px;
+                padding: 15px 0;
+                background-color: #f5f5f5
+
+
+            }
+
+            .card p:nth-child(2) {
+                display: none;
+            }
+
+            .header {
+                display: flex;
+            }
+
+            .img-my-mail {
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+                margin-left: 20px;
+            }
+
+            .left-mail {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                
+                
+            }
+
+            .right-mail {
+                display: flex;
+                align-items: center;
+                margin-left: 160px;
+                gap: 10px;
+            }
+
+            hr {
+                margin-top: 20px;
+            }
+
+            .img-account {
+                width: 30px;
+                height: 30px;
+                
+            }
+
+            .star-1, .star-2 {
+                width: 13px;
+                height: 13px;
+                margin-bottom: 43px;
+            }
+
+            .card {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-left: 20px;
+                margin-top: 15px;
+                font-size: 14px;
+            }
+
+            .img-left-menu {
+                width: 30px;
+                height: 30px;
+            }
+
+            .incoming {
+                margin-top: 20px;
+            }
+
+            .content-left-main {
+                display: flex;
+                
+            }
+
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                margin-top: 8px;
+                margin-left: 30px;
+                margin-bottom: 15px;
+            }
+
+            .text-content p:nth-child(2) {
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .main-content-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                display: none;
+            }
+
+            .sms {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                border-bottom: 1px solid #e7e7e7;
+                padding: 10px 0;
+            }
+
+            .sender-name {
+                width: 250px;
+                min-width: 150px;
+                flex-shrink: 0;
+            }
+
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 5px;
+                overflow: hidden;
+            }
+
+            .sms-data {
+                display: flex;
+                font-size: 14px;
+                margin-bottom: 38px;
+                gap: 20px;
+                align-items: center;
+                justify-content: flex-end;
+                flex-shrink: 0;
+            }
+
+            .sms-3 .sms-data,
+            .sms-6 .sms-data,
+            .sms-7 .sms-data {
+                margin-left: 35px;
+            }
+
+            .attach {
+                width: 15px;
+                height: 15px;
+            }
+
+            .text-content p:nth-child(2) {
+                color: #9a9b9a;
+            }
+
+
+            .incoming {
+                background-color: rgba(255, 0, 0, 0.123);
+                padding: 8px 0;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+
+            .outgoing, .drafts, .spam  {
+                margin-left: 35px;
+            }
+
+
+
+        }
+
+
+
+            
+            
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-mail">
+                <img src="./resources/mail.png" alt="my-mail" class="img-my-mail">
+                <p>MY</p>
+                <p>MAIL</p>
+            </div>
+
+            <div class="right-mail">
+                <p>user@mymail.com</p>
+                <img src="./resources/account.png" alt="account" class="img-account">
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="content-left-main">
+            <div class="left-menu">
+
+                <div class="incoming card">
+                    <img src="./resources/incom.png" alt="incoming" class="img-left-menu">
+                    <p>Incoming</p>
+                </div>
+
+                <div class="outgoing card">  
+                    <img src="./resources/outcom.png" alt="outgoing" class="img-left-menu">
+                    <p>Outgoing</p>
+                </div>
+
+                <div class="drafts card">
+                    <img src="./resources/draft.png" alt="drafts" class="img-left-menu">
+                    <p>Drafts</p>
+                </div>
+
+                <div class="spam card">
+                    <img src="./resources/spam.png" alt="spam" class="img-left-menu">
+                    <p>Spam</p>
+                </div>
+                    
+            </div>
+
+            <div class="main-content">
+                <div class="sms-1 sms">
+                    <img src="./resources/star1.png" alt="star-1" class="star-1">
+                    <div class="main-content-text">
+                        <div class="sender-name">me,Alex</div>
+                        <div class="text-content">
+                            <p>Trip to America</p>
+                            <p> <span>-</span> Sispendisse ut sapien non arcu rutrum t...</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <img src="./resources/attach_26.png" alt="attach" class="attach">
+                        <p>12 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-2 sms">
+                    <img src="./resources/star1.png" alt="star-1" class="star-1">
+                    <div class="main-content-text">
+                        <div class="sender-name">me,John</div>
+                        <div class="text-content">
+                            <p>Santa Mpnica trip</p>
+                            <p> <span>-</span> Cras accumsan lasuc quis urna ukticiws, vel fi...</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <img src="./resources/attach_26.png" alt="attach" class="attach">
+                        <p>12 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-3 sms">
+                    <img src="./resources/star1.png" alt="star-1" class="star-1">
+                    <div class="main-content-text">
+                        <div class="sender-name">me,John,Alex</div>
+                        <div class="text-content">
+                            <p>Birthday party</p>
+                            <p> <span>-</span> 20.04.2019</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <p>11 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-4 sms">
+                    <img src="./resources/star2.png" alt="star-2" class="star-2">
+                    <div class="main-content-text">
+                        <div class="sender-name">Mari White</div>
+                        <div class="text-content">
+                            <p>Report (march 2019)</p>
+                            <p> <span>-</span> Sispendisse ut sapien non arcu rutrum t...</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <img src="./resources/attach_26.png" alt="attach" class="attach">
+                        <p>10 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-5 sms">
+                    <img src="./resources/star1.png" alt="star-1" class="star-1">
+                    <div class="main-content-text">
+                        <div class="sender-name">me,Elena</div>
+                        <div class="text-content">
+                            <p>Duis semper augue</p>
+                            <p> <span>-</span> Nunc finibus sem vel odio mattis</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <img src="./resources/attach_26.png" alt="attach" class="attach">
+                        <p>10 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-6 sms">
+                    <img src="./resources/star1.png" alt="star-1" class="star-1">
+                    <div class="main-content-text">
+                        <div class="sender-name">Bill, John</div>
+                        <div class="text-content">
+                            <p>Ut congue purus</p>
+                            <p> <span>-</span> Ut sit amet eros hendrerit, posuere arcu sed, v...</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <p>5 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-7 sms">
+                    <img src="./resources/star2.png" alt="star-2" class="star-2">
+                    <div class="main-content-text">
+                        <div class="sender-name">Stive</div>
+                        <div class="text-content">
+                            <p>Phasellus quis velit tincidunt</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <p>1 apr.</p>
+                    </div>
+                </div>
+
+                <div class="sms-8 sms">
+                    <img src="./resources/star2.png" alt="star-2" class="star-2">
+                    <div class="main-content-text">
+                        <div class="sender-name">Mari White</div>
+                        <div class="text-content">
+                            <p>Report (february 2019)</p>
+                        </div>
+                    </div>
+                    <div class="sms-data">
+                        <img src="./resources/attach_26.png" alt="attach" class="attach">
+                        <p>10 mar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            
+
+
+
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
