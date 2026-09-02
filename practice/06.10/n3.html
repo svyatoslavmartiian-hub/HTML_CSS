@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left-menu {
+            background-color: #333333;
+            color: white;
+        }
+
+        .main-content {
+            background-color: #dbdbdb;
+        }
+
+        .image-1,
+        .image-2,
+        .content-2 {
+            background-color: #f5f5f5;
+        }
+
+        @media (min-width: 601px) {
+
+            .container {
+                display: flex;
+                
+            }
+
+            .content-1-1 {
+                display: flex;
+            }
+
+            .image-photo-1,
+            .image-photo-2 {
+                width: 50px;
+                height: 50px;
+            }
+
+            .content-text {
+                display: flex;
+            }
+
+            .logo-image {
+                width: 70px; 
+            }
+
+            .logo {
+                margin-left: 30px;
+                margin-top: 15px;
+            }
+
+            .left-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                padding-bottom: 150px;
+                padding-right: 50px;
+                padding-left: 10px;
+            }
+
+            .left-menu p:nth-child(n+1) {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-bottom: 1px solid black;
+                padding-bottom: 20px;
+
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-menu">
+            <div class="logo"><img src="./resources/logo.png" alt="logo" class="logo-image"></div>
+            <p>DASHBOARD</p>
+            <p>USERS</p>
+            <p>FILE MANAGER</p>
+            <p>POSTS</p>
+            <p>EVENTS</p>
+        </div>
+        <div class="main-content">
+            <div class="content-1">
+                <h1>Dashboard - May 25, 2019</h1>
+                <div class="content-1-1">
+                    <div class="image-1">
+                        <p>TRAFFIC</p>
+                        <img src="./resources/chart1.png" alt="chart1" class="image-photo-1">
+                    </div>
+                    <div class="image-2">
+                        <p>LOADS</p>
+                        <img src="./resources/chart2.png" alt="chart2" class="image-photo-2">
+                    </div>
+                
+                </div>
+            </div>
+            <div class="content-2">
+                <p>RECENT ACTIVITY</p>
+                <div class="content-text">
+                    <div class="text-1">
+                        <p>#    Title</p>
+                        <p>1    Etiam eu erat sit amet nisi eleifend aliquam</p>
+                        <p>2    Ut maximus lacuc ut ante tristique, et rutrum leo eleifend</p>
+                        <p>3    Donec eget ligula sed diam pharetra sodales eget a metus</p>
+                        <p>4    Curabitur bibendum odio in velit pretium luctus</p>
+                    </div>
+                    <div class="text-2">
+                        <p>Author</p>
+                        <p>Phoebe Britton</p>
+                        <p>Rosina Clay</p>
+                        <p>Ayush Horn</p>
+                        <p>Jillian Carver</p>
+
+                    </div>
+                    <div class="text-3">
+                        <p>Date</p>
+                        <p>25/05/19</p>
+                        <p>25/05/19</p>
+                        <p>24/05/19</p>
+                        <p>23/05/19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
