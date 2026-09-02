@@ -11,6 +11,8 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
 
         .left-menu {
@@ -32,7 +34,14 @@
 
             .container {
                 display: flex;
+                padding: 5px;
                 
+            }
+
+            .image-1,
+            .image-2 {
+                flex: 1;
+                padding: 15px;
             }
 
             .content-1-1 {
@@ -41,8 +50,23 @@
 
             .image-photo-1,
             .image-photo-2 {
-                width: 50px;
-                height: 50px;
+                width: 100%;
+                max-width: 150px;
+                height: 150px;
+                margin-left:  100px;
+                margin-right: 70px;
+            }
+
+            .image-1 p:first-child,
+            .image-2 p:first-child {
+                padding: 5px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .image-1,
+            .image-2 {
+                margin: 15px;
             }
 
             .content-text {
@@ -71,12 +95,196 @@
                 display: flex;
                 flex-direction: column;
                 font-size: 14px;
-                font-family: Arial, Helvetica, sans-serif;
                 border-bottom: 1px solid black;
                 padding-bottom: 20px;
 
             }
 
+            .main-content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            .content-2 {
+                margin-left: 15px;
+                max-width: 730px;
+            }
+
+            .text-content-2-1 {
+                font-weight: 900;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            .content-text {
+                gap: 7px;
+                padding-left: 30px;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+            .text {
+                display: flex;
+                border-bottom: 1px solid black;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                font-size: 14px;
+
+            }
+
+            .text p:first-child {
+                max-width: 430px;
+                width: 100%;
+                
+            }
+
+            .text p:nth-child(2) {
+                width: 100%;
+                max-width: 120px;
+            }
+
+            .text-1 {
+                font-weight: 800;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                
+            }
+
+            .image-1,
+            .image-2 {
+                flex: 1;
+                padding: 15px;
+            }
+
+            .content-1-1 {
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .image-photo-1,
+            .image-photo-2 {
+                width: 100%;
+                max-width: 180px;
+                height: 180px;
+                margin-left:  100px;
+                margin-right: 70px;
+            }
+
+            .image-1 p:first-child,
+            .image-2 p:first-child {
+                padding: 5px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .image-1,
+            .image-2 {
+                margin: 15px;
+            }
+
+            .content-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo-image {
+                width: 40px; 
+            }
+
+            .logo {
+                margin: 0 auto;
+            }
+
+            .left-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding-right: 50px;
+                padding-left: 30px;
+            }
+
+            .left-menu p:nth-child(n+1) {
+                display: flex;
+                flex-direction: row;
+                font-size: 14px;
+                border-bottom: 1px solid black;
+                padding-bottom: 20px;
+
+            }
+
+            .main-content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 18px;
+                margin-left: 15px;
+            }
+
+            .content-2 {
+                margin-left: 15px;
+                max-width: 730px;
+            }
+
+            .text-content-2-1 {
+                font-weight: 900;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            .content-text {
+                gap: 7px;
+                padding-left: 30px;
+                padding-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+            .text {
+                display: flex;
+                border-bottom: 1px solid black;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                font-size: 12px;
+
+            }
+
+            .text p:first-child {
+                max-width: 130px;
+                width: 100%;
+                
+            }
+
+            .text p:nth-child(2) {
+                width: 100%;
+                max-width: 150px;
+                padding-left: 60px;
+                padding-right: 40px;
+            }
+
+            .text-1 {
+                font-weight: 800;
+            }
 
         }
 
@@ -108,30 +316,38 @@
                 </div>
             </div>
             <div class="content-2">
-                <p>RECENT ACTIVITY</p>
+                <p class="text-content-2-1">RECENT ACTIVITY</p>
                 <div class="content-text">
-                    <div class="text-1">
-                        <p>#    Title</p>
-                        <p>1    Etiam eu erat sit amet nisi eleifend aliquam</p>
-                        <p>2    Ut maximus lacuc ut ante tristique, et rutrum leo eleifend</p>
-                        <p>3    Donec eget ligula sed diam pharetra sodales eget a metus</p>
-                        <p>4    Curabitur bibendum odio in velit pretium luctus</p>
+                    <div class="text-1 text">
+                        <p class="p-1-text-1"># Title</p>
+                        <p>Author</p> 
+                        <p>Date</p>       
                     </div>
-                    <div class="text-2">
-                        <p>Author</p>
-                        <p>Phoebe Britton</p>
-                        <p>Rosina Clay</p>
-                        <p>Ayush Horn</p>
-                        <p>Jillian Carver</p>
 
+                    <div class=" text">
+                        <p>1 Etiam eu erat sit amet nisi eleifend aliquam</p>
+                        <p>Phoebe Britton</p> 
+                        <p>25/05/19</p>       
                     </div>
-                    <div class="text-3">
-                        <p>Date</p>
-                        <p>25/05/19</p>
-                        <p>25/05/19</p>
-                        <p>24/05/19</p>
-                        <p>23/05/19</p>
+
+                    <div class=" text">
+                        <p>2 Ut maximus lacus ut ante tristique, et rutrum leo eleifend</p> 
+                        <p>Rosina Clay</p>
+                        <p>25/05/19 </p>     
                     </div>
+
+                    <div class=" text">
+                        <p>3 Donec eget ligula sed diam phantra sodales eget a metus</p> 
+                        <p>Ayush Horn</p>
+                        <p>24/05/19</p>    
+                    </div>
+
+                    <div class=" text">
+                        <p>4 Curabitur bibendum odio in velit pretium luctus</p> 
+                        <p>Jullian Carver</p>
+                        <p>23/05/19</p>    
+                    </div>
+
                 </div>
             </div>
         </div>
