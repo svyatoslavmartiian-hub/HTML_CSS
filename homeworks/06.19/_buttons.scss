@@ -1,0 +1,24 @@
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: $font-family;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-buy {
+  @extend .btn;
+  background-color: $success;
+}
+
+.btn-cancel {
+  @extend .btn;
+  background-color: $danger;
+}
+
+.btn-info {
+  @extend .btn;
+  background-color: $primary;
+}
